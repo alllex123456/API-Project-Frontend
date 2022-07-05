@@ -26,6 +26,7 @@ class App extends Component {
 
   componentDidMount() {
     const token = localStorage.getItem('token');
+    console.log(token);
     const expiryDate = localStorage.getItem('expiryDate');
     if (!token || !expiryDate) {
       return;
